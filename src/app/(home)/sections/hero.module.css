@@ -1,0 +1,11 @@
+.heading {
+  background: linear-gradient(280deg, #5cd3bd, #5af9e4, #45c1bc, #4bdcdc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.regular {
+  @apply sm:text-2xl md:text-regular font-medium;
+}

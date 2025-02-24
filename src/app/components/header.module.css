@@ -1,0 +1,57 @@
+.list {
+  @apply text-white flex rounded-none md:rounded-full bg-backgroundDarker flex-col md:flex-row border-b-2 border-zinc-800;
+}
+
+.list:hover {
+  @apply text-zinc-700;
+}
+
+.li {
+  @apply flex h-full justify-center items-center content-center;
+}
+
+.link {
+  transition: all 0.3s ease;
+
+  @apply flex py-3 px-9 text-2xl md:text-base;
+}
+
+.link:hover {
+  color: white;
+}
+
+.nav {
+  transition: all 0.3s ease;
+  @apply translate-y-[-100%] md:translate-y-0;
+}
+
+.nav.active {
+  @apply translate-y-0;
+}
+
+.burger {
+}
+
+.burger span {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: white;
+
+  transition: all 0.1s ease;
+
+  opacity: 1;
+}
+
+.burger.active span:nth-child(2) {
+  transform: rotate(0deg);
+  opacity: 0;
+}
+
+.burger span:nth-child(1) {
+}
+
+.burger span:nth-child(2) {
+  transform: rotate(90deg);
+}
