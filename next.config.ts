@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  env: {
+    linkedin: "https://www.linkedin.com/in/vladyslav-voichenko/",
+    github: "https://github.com/FalloutEngineer",
+  },
+}
 
-export default nextConfig;
+export default nextConfig

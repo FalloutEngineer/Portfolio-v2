@@ -3,7 +3,7 @@ import Link from "next/dist/client/link"
 import React, { useState } from "react"
 
 import styles from "./header.module.css"
-import Container from "./Container"
+import Container from "../container/Container"
 
 export default function Header({
   left = [],
@@ -36,6 +36,7 @@ export default function Header({
             isActive ? styles.active : ""
           } absolute right-2 top-2 text-6xl md:hidden flex rounded-full h-[60px] w-[60px] text-center items-center justify-center bg-backgroundDarker border-b-2 border-zinc-800 z-10`}
         >
+          <span></span>
           <span></span>
           <span></span>
         </button>

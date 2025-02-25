@@ -1,7 +1,7 @@
 import React from "react"
 
 import styles from "./hero.module.css"
-import Container from "@/app/components/Container"
+import Container from "@/app/components/container/Container"
 
 export default function Hero() {
   return (

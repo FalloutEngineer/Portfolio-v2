@@ -36,22 +36,30 @@
   position: absolute;
   display: block;
   width: 30px;
-  height: 5px;
-  background-color: white;
+  height: 4px;
+  background: var(--gradient-main);
 
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
 
   opacity: 1;
 }
 
+.burger span:nth-child(1) {
+  top: 17px;
+}
+
+.burger span:nth-child(3) {
+  bottom: 17px;
+}
+
 .burger.active span:nth-child(2) {
-  transform: rotate(0deg);
   opacity: 0;
 }
 
-.burger span:nth-child(1) {
+.burger.active span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
 }
 
-.burger span:nth-child(2) {
-  transform: rotate(90deg);
+.burger.active span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
 }

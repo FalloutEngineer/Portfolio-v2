@@ -1,4 +1,5 @@
-import Header from "../components/Header"
+import FlyingButtons from "../components/flying-buttons/FlyingButtons"
+import Header from "../components/header/Header"
 import Hero from "./sections/Hero"
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       />
       <main className="">
         <Hero />
+        <FlyingButtons />
       </main>
       <footer className=""></footer>
     </div>
