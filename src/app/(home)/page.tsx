@@ -1,6 +1,7 @@
 import FlyingButtons from "../components/flying-buttons/FlyingButtons"
 import Header from "../components/header/Header"
 import Hero from "./sections/hero/Hero"
+import Skills from "./sections/skills/Skills"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <main className="">
         <Hero />
         <FlyingButtons />
+        <Skills />
       </main>
       <footer className=""></footer>
     </div>
