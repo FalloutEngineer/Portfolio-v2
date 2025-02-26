@@ -28,7 +28,7 @@ export default function Header({
     ))
 
   return (
-    <div className="fixed w-full">
+    <div className="fixed w-full z-[9999]">
       <Container styles="relative px-0 md:px-[15px]">
         <button
           onClick={burgerOnClick}

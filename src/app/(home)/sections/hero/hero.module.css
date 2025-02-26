@@ -1,0 +1,30 @@
+.heading {
+  background: var(--gradient-main);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.regular {
+  @apply min-h-[16px] sm:min-h-[32px] md:min-h-[33px] sm:text-2xl md:text-regular font-medium;
+}
+
+.section {
+  position: relative;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at center bottom,
+    rgba(154, 214, 211, 0.08) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
