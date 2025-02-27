@@ -1,3 +1,4 @@
+import CursorEffect from "../components/cursor-effect/CursorEffect"
 import FlyingButtons from "../components/flying-buttons/FlyingButtons"
 import Header from "../components/header/Header"
 import Hero from "./sections/hero/Hero"
@@ -19,6 +20,7 @@ export default function Home() {
       <main className="">
         <Hero />
         <FlyingButtons />
+        <CursorEffect />
         <Skills />
       </main>
       <footer className=""></footer>
