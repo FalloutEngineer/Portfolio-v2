@@ -18,3 +18,17 @@ body {
 
   box-sizing: border-box;
 }
+
+.background-gradient {
+  background: #4bdcdc;
+  background: -moz-linear-gradient(280deg, #5cd3bd, #5af9e4, #45c1bc, #4bdcdc);
+  background: -webkit-linear-gradient(
+    280deg,
+    #5cd3bd,
+    #5af9e4,
+    #45c1bc,
+    #4bdcdc
+  );
+  background: linear-gradient(280deg, #5cd3bd, #5af9e4, #45c1bc, #4bdcdc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5cd3bd",endColorstr="#4bdcdc",GradientType=1);
+}

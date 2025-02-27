@@ -1,10 +1,18 @@
 import CursorEffect from "../components/cursor-effect/CursorEffect"
 import FlyingButtons from "../components/flying-buttons/FlyingButtons"
 import Header from "../components/header/Header"
+import CustomMarquee from "../components/marquee/CustomMarquee"
+
 import Hero from "./sections/hero/Hero"
 import Skills from "./sections/skills/Skills"
 
 export default function Home() {
+  const CVMarquee = () => (
+    <CustomMarquee
+      items={[{ text: "DOWNLOAD CV", url: "#", isDownload: true }]}
+    />
+  )
+
   return (
     <div className="font-[family-name:var(--font-inter)] relative">
       <Header
@@ -20,6 +28,7 @@ export default function Home() {
       <main className="">
         <Hero />
         <FlyingButtons />
+        <CVMarquee />
         <CursorEffect />
         <Skills />
       </main>
