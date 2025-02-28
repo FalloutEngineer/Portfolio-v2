@@ -1,6 +1,9 @@
 import Container from "@/app/components/container/Container"
-import Skill from "@/app/components/skill/Skill"
+import Skill from "@/app/(home)/sections/skills/skill/Skill"
 import React from "react"
+import SubheadingText from "@/app/components/text/SubheadingText"
+import Heading from "@/app/components/text/Heading"
+import ContentWrapper from "@/app/components/content-wrapper/ContentWrapper"
 
 export default function Skills() {
   const skills: Skill[] = [
@@ -59,14 +62,12 @@ export default function Skills() {
   return (
     <section>
       <Container styles="flex">
-        <div className="flex flex-col w-full py-[50px] md:py-[75px] lg:py-[145px]">
+        <ContentWrapper>
           <div className="">
-            <h2 className="font-black text-2xl md:text-3xl lg:text-4xl">
-              How i could be useful
-            </h2>
-            <p className="mt-3 text-xl opacity-65">
+            <Heading>How i could be useful</Heading>
+            <SubheadingText>
               I’m geek in anything that helps with creating awesome IT products
-            </p>
+            </SubheadingText>
           </div>
           <div className="mt-12 flex min-w-full">
             <ul className="grid grid-cols-1 gap-[15px] md:grid-cols-2 md:gap-[30px] w-full">
@@ -82,7 +83,7 @@ export default function Skills() {
               ))}
             </ul>
           </div>
-        </div>
+        </ContentWrapper>
       </Container>
     </section>
   )

@@ -4,6 +4,7 @@ import Header from "../components/header/Header"
 import CustomMarquee from "../components/marquee/CustomMarquee"
 
 import Hero from "./sections/hero/Hero"
+import Projects from "./sections/projects/Projects"
 import Skills from "./sections/skills/Skills"
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
         <FlyingButtons />
         <CVMarquee />
         <CursorEffect />
+        <Projects />
         <Skills />
       </main>
       <footer className=""></footer>
