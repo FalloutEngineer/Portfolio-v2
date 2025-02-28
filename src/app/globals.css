@@ -32,3 +32,25 @@ body {
   background: linear-gradient(280deg, #5cd3bd, #5af9e4, #45c1bc, #4bdcdc);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5cd3bd",endColorstr="#4bdcdc",GradientType=1);
 }
+
+.slick-list {
+  display: flex;
+  height: fit-content;
+  line-height: 0;
+  @apply rounded-2xl;
+}
+
+.slick-track {
+  display: flex;
+  height: fit-content;
+}
+
+.slick-slide.slick-slide {
+  height: fit-content !important;
+  outline: none;
+}
+
+.slick-slide > div {
+  display: flex;
+  height: fit-content;
+}

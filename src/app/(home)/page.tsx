@@ -32,6 +32,7 @@ export default function Home() {
         <CVMarquee />
         <CursorEffect />
         <Projects />
+        <CVMarquee />
         <Skills />
       </main>
       <footer className=""></footer>

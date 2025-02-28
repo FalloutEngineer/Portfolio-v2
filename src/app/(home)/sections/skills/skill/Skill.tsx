@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "next/image"
-import styles from "./skill.module.css"
+import styles from "../../../../components/gradient.module.css"
+import ItemHeading from "@/app/components/text/ItemHeading"
 
 type SkillProps = Skill & {
   baseWidth?: number
@@ -27,7 +28,7 @@ export default function Skill({
         <Image src={imgUrl} alt={title} width={width} height={height} />
       </div>
       <div className="ml-4">
-        <h3 className="text-2xl font-bold">{title}</h3>
+        <ItemHeading>{title}</ItemHeading>
         <p className="mt-1">{description}</p>
       </div>
     </div>
