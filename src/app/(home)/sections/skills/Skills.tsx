@@ -21,12 +21,12 @@ export default function Skills() {
     },
     {
       title: "TypeScript",
-      description: "To catch errors on development time",
+      description: "To catch errors on development stage",
       imgUrl: "/svg/TypeScript.svg",
     },
     {
       title: "Next.js",
-      description: "To make websites popular in search engines",
+      description: "To make websites optimized for search engines",
       imgUrl: "/svg/NextJS.svg",
     },
     {

@@ -11,7 +11,7 @@ export default function CustomMarquee({ items = [] }: CustomMarqueeProps) {
   return (
     <Marquee
       autoFill={true}
-      pauseOnHover={true}
+      pauseOnHover={false}
       direction={"right"}
       className={`background-gradient text-[var(--background)] font-extrabold text-6xl z-[9] overflow-hidden`}
     >

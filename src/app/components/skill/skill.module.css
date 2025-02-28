@@ -1,4 +1,18 @@
+@property --start-color {
+  syntax: "<color>";
+  initial-value: rgba(255, 255, 255, 0.06);
+  inherits: false;
+}
+
+@property --end-color {
+  syntax: "<color>";
+  initial-value: rgba(111, 111, 111, 0.06);
+  inherits: false;
+}
+
 .gradient {
+  transition: --start-color 0.6s ease, --end-color 0.6s ease;
+
   background: rgb(255, 255, 255);
   background: -moz-linear-gradient(
     90deg,
@@ -12,8 +26,13 @@
   );
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.06) 56%,
-    rgba(111, 111, 111, 0.06) 100%
+    var(--start-color) 56%,
+    var(--end-color) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#6f6f6f",GradientType=1);
+}
+
+.gradient:hover {
+  --start-color: rgba(255, 255, 255, 0.077);
+  --end-color: rgba(255, 255, 255, 0.077);
 }
