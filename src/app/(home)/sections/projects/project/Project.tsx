@@ -45,6 +45,11 @@ export default function Project({ project }: { project: Project }) {
           </div>
         </div>
         <div
+          onClick={(e) => {
+            e.stopPropagation()
+            e.nativeEvent.stopImmediatePropagation()
+            e.preventDefault()
+          }}
           className={`flex items-center justify-center mt-4 md:mt-0 ${
             project.orientation === "vertical"
               ? "max-w-72 lg:max-w-52"

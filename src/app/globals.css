@@ -54,3 +54,22 @@ body {
   display: flex;
   height: fit-content;
 }
+
+.slick-arrow.slick-arrow {
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev.slick-prev {
+  left: -80px;
+}
+
+.slick-next.slick-next {
+  right: 0px;
+}
+
+.slick-arrow.slick-arrow::before {
+  font-size: 40px;
+  box-sizing: content-box;
+  padding: 40px;
+}

@@ -76,6 +76,12 @@ of given text written on Italian language.`,
           width: 3840,
           height: 1682,
         },
+        {
+          url: "/projects/analisi-stats.jpeg",
+          alt: "Statistics of the analisilogica website",
+          width: 3840,
+          height: 1682,
+        },
       ],
     },
   ]
