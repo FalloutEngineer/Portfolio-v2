@@ -26,7 +26,7 @@ export default function Skill({
       <div>
         <Image src={imgUrl} alt={title} width={width} height={height} />
       </div>
-      <div className="mt-3 text-center">
+      <div className="mt-3 text-center opacity-65">
         <ItemHeading>{title}</ItemHeading>
       </div>
     </div>

@@ -35,15 +35,17 @@ export default function Project({ project }: { project: Project }) {
         <div className="flex flex-col gap-4">
           <div className="">
             <ItemHeading>{project.title}</ItemHeading>
-            <p className="mt-3 whitespace-pre-wrap">{project.description}</p>
+            <p className="mt-3 whitespace-pre-wrap opacity-65">
+              {project.description}
+            </p>
           </div>
           <div className="">
             <ItemSubheading>Role</ItemSubheading>
-            <p>{project.role}</p>
+            <p className="opacity-65">{project.role}</p>
           </div>
           <div className="">
             <ItemSubheading>Stack</ItemSubheading>
-            <p>{project.stack}</p>
+            <p className="opacity-65">{project.stack}</p>
           </div>
         </div>
         <div
