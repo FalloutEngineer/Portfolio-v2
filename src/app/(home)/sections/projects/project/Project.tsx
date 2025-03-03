@@ -44,13 +44,19 @@ export default function Project({ project }: { project: Project }) {
             <p>{project.stack}</p>
           </div>
         </div>
-        <div className="flex items-center justify-center mt-4 md:mt-0">
+        <div
+          className={`flex items-center justify-center mt-4 md:mt-0 ${
+            project.orientation === "vertical"
+              ? "max-w-72 lg:max-w-52"
+              : "max-w-[450px]"
+          }`}
+        >
           <div
             className={`slider-container ${
               project.orientation === "vertical"
                 ? "max-w-72 lg:max-w-52"
                 : "max-w-2xl lg:max-w-3xl"
-            } border-8 rounded-3xl border-zinc-800 bg-zinc-800`}
+            } border-8 rounded-3xl border-zinc-800 bg-zinc-800 w-full`}
           >
             {project.images ? (
               project.images.length > 1 ? (

@@ -62,6 +62,22 @@ of given text written on Italian language.`,
         },
       ],
     },
+    {
+      title: "Analisilogica",
+      description: `Web service for analyzing grammar and logic of the texts written on the italian language `,
+      role: "FullStack Engineer",
+      stack: "JavaScript, WordPress, PHP",
+      orientation: "horizontal",
+      link: "https://analisilogica.net/",
+      images: [
+        {
+          url: "/projects/analisilogica.png",
+          alt: "Screenshot of Analisilogica main page",
+          width: 3840,
+          height: 1682,
+        },
+      ],
+    },
   ]
 
   return (
