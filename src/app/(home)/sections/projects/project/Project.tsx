@@ -14,6 +14,8 @@ import ConditionalLinkWrapper from "@/app/components/conditional-wrap/Conditiona
 export default function Project({ project }: { project: Project }) {
   const imageSizeModifier = 1
 
+  const isSliderMode = project.images && project.images.length > 1
+
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -46,15 +48,17 @@ export default function Project({ project }: { project: Project }) {
         </div>
         <div
           onClick={(e) => {
-            e.stopPropagation()
-            e.nativeEvent.stopImmediatePropagation()
-            e.preventDefault()
+            if (isSliderMode) {
+              e.stopPropagation()
+              e.nativeEvent.stopImmediatePropagation()
+              e.preventDefault()
+            }
           }}
           className={`flex items-center justify-center mt-4 md:mt-0 ${
             project.orientation === "vertical"
               ? "max-w-72 lg:max-w-52"
               : "max-w-[450px]"
-          }`}
+          } ${isSliderMode ? "cursor-grab" : "cursor-default"}`}
         >
           <div
             className={`slider-container ${
