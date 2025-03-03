@@ -71,7 +71,7 @@ of given text written on Italian language.`,
           <div className="">
             <Heading>Projects</Heading>
             <SubheadingText>
-              Let’s explore most notable projects in which i have participated
+              Let’s explore some selected projects in which i have participated
             </SubheadingText>
           </div>
           <ul className="flex flex-col gap-7 mt-12">
