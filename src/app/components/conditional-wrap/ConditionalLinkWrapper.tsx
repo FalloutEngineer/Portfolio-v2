@@ -12,7 +12,7 @@ const ConditionalLinkWrapper = ({
   children,
 }: ConditionalWrapperProps) => {
   return condition ? (
-    <Link href={href} passHref>
+    <Link href={href} passHref target="_blank">
       <div>{children}</div>
     </Link>
   ) : (

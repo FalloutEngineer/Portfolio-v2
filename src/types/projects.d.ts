@@ -5,4 +5,5 @@ type Project = {
   stack: string
   images?: Image[]
   link?: string
+  orientation: "vertical" | "horizontal"
 }

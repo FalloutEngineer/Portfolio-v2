@@ -45,7 +45,13 @@ export default function Project({ project }: { project: Project }) {
           </div>
         </div>
         <div className="flex items-center justify-center mt-4 md:mt-0">
-          <div className="slider-container max-w-72 lg:max-w-52 border-8 rounded-3xl border-zinc-800 bg-zinc-800">
+          <div
+            className={`slider-container ${
+              project.orientation === "vertical"
+                ? "max-w-72 lg:max-w-52"
+                : "max-w-2xl lg:max-w-3xl"
+            } border-8 rounded-3xl border-zinc-800 bg-zinc-800`}
+          >
             {project.images ? (
               project.images.length > 1 ? (
                 <Slider {...sliderSettings} className="max-h-fit flex w-full">

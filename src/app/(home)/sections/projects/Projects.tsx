@@ -11,8 +11,10 @@ export default function Projects() {
       title: "Fair Partner App",
       description: `App for business, which mission is  to help foreigners find job in Poland.
 App includes news feed, blog, employment documents and tax assistance`,
-      role: "Frontend (mobile) Engineer",
+      role: "Frontend (Mobile) Engineer",
       stack: "React Native, TypeScript, Intl, Figma",
+      orientation: "vertical",
+      link: "https://fairpartner.pl/",
       images: [
         {
           url: "/projects/fair.jpg",
@@ -28,6 +30,7 @@ App includes news feed, blog, employment documents and tax assistance`,
 of given text written on Italian language.`,
       role: "Node.js Engineer",
       stack: "Node.js, TypeScript, Telegram API, ChatGPT API, Stripe",
+      orientation: "vertical",
       images: [
         {
           url: "/projects/compito-1.jpg",
@@ -40,6 +43,22 @@ of given text written on Italian language.`,
           alt: "Screenshot number 2 of Compitoilaiano bot",
           width: 498,
           height: 849,
+        },
+      ],
+    },
+    {
+      title: "Smart University",
+      description: `Customizable engine for IoT websites of educational institutions. Includes admin dashboard, buildings list, floors list, rooms list and concrete pages.`,
+      role: "FullStack Engineer",
+      stack: "React.js, Node.js, TypeScript, Express.js",
+      orientation: "horizontal",
+      link: "https://github.com/FalloutEngineer/smart-university-react",
+      images: [
+        {
+          url: "/projects/smart-university.png",
+          alt: "Screenshot of Smart University main page",
+          width: 3840,
+          height: 1682,
         },
       ],
     },
