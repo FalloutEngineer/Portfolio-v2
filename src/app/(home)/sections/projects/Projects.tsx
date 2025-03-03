@@ -60,6 +60,12 @@ of given text written on Italian language.`,
           width: 3840,
           height: 1682,
         },
+        {
+          url: "/projects/smart-university-db.png",
+          alt: "Screenshot of Smart University main page",
+          width: 3840,
+          height: 1682,
+        },
       ],
     },
     {

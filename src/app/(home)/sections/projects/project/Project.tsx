@@ -30,7 +30,7 @@ export default function Project({ project }: { project: Project }) {
       href={project.link ? project.link : ""}
     >
       <div
-        className={`${styles.gradient} flex gap-4 flex-col md:flex-row w-full justify-between rounded-[40px] px-6 py-4 md:px-16 md:py-8`}
+        className={`${styles.gradient} flex gap-10 flex-col md:flex-row w-full justify-between rounded-[40px] px-6 py-4 md:px-16 md:py-8`}
       >
         <div className="flex flex-col gap-4">
           <div className="">
@@ -56,7 +56,7 @@ export default function Project({ project }: { project: Project }) {
               e.preventDefault()
             }
           }}
-          className={`flex items-center justify-center mt-4 md:mt-0 ${
+          className={`flex self-center md:self-auto items-center justify-center mt-4 md:mt-0 ${
             project.orientation === "vertical"
               ? "max-w-72 lg:max-w-52"
               : "max-w-[450px]"
@@ -90,16 +90,18 @@ export default function Project({ project }: { project: Project }) {
                     : ""}
                 </Slider>
               ) : (
-                <div className="rounded-2xl overflow-hidden">
-                  <Image
-                    key={project.images?.[0].url}
-                    src={project.images?.[0].url}
-                    alt={project.images?.[0].alt}
-                    width={project.images?.[0].width * imageSizeModifier}
-                    height={project.images?.[0].height * imageSizeModifier}
-                    className="transition-all select-none md:hover:scale-[1.05]"
-                    draggable={false}
-                  />
+                <div className="max-h-fit flex w-full">
+                  <div className="rounded-2xl overflow-hidden">
+                    <Image
+                      key={project.images?.[0].url}
+                      src={project.images?.[0].url}
+                      alt={project.images?.[0].alt}
+                      width={project.images?.[0].width * imageSizeModifier}
+                      height={project.images?.[0].height * imageSizeModifier}
+                      className="transition-all select-none md:hover:scale-[1.05] flex"
+                      draggable={false}
+                    />
+                  </div>
                 </div>
               )
             ) : (

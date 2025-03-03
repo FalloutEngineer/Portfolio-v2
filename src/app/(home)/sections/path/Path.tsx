@@ -13,6 +13,10 @@ export default function Path() {
           <SubheadingText>
             Let&apos;s explore my personal path in software development.
           </SubheadingText>
+          <div className="flex w-full mt-12">
+            <div className="flex flex-grow">1</div>
+            <div className="flex flex-grow">2</div>
+          </div>
         </ContentWrapper>
       </Container>
     </section>

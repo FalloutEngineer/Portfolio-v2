@@ -84,7 +84,7 @@ export default function Skills() {
             </SubheadingText>
           </div>
           <div className="mt-12 flex min-w-full">
-            <ul className="grid grid-cols-1 gap-[15px] md:grid-cols-6 md:gap-[25px] w-full">
+            <ul className="grid grid-cols-3 gap-[15px] md:grid-cols-6 md:gap-[25px] w-full">
               {skills.map((skill) => (
                 <li key={skill.title} className="flex w-full">
                   <Skill
