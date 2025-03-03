@@ -5,5 +5,5 @@ export default function SubheadingText({
 }: {
   children: React.ReactNode
 }) {
-  return <p className="mt-3 text-xl opacity-65">{children}</p>
+  return <p className="mt-3 text-xl text-[var(--subtext)]">{children}</p>
 }

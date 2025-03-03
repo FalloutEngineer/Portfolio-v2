@@ -4,6 +4,7 @@ import Header from "../components/header/Header"
 import CustomMarquee from "../components/marquee/CustomMarquee"
 
 import Hero from "./sections/hero/Hero"
+import Path from "./sections/path/Path"
 import Projects from "./sections/projects/Projects"
 import Skills from "./sections/skills/Skills"
 
@@ -34,6 +35,8 @@ export default function Home() {
         <Projects />
         <CVMarquee />
         <Skills />
+        <CVMarquee />
+        <Path />
       </main>
       <footer className=""></footer>
     </div>
