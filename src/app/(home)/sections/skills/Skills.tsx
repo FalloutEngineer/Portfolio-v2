@@ -8,54 +8,68 @@ import ContentWrapper from "@/app/components/content-wrapper/ContentWrapper"
 export default function Skills() {
   const skills: Skill[] = [
     {
-      title: "Web",
-      description: "For awesome responsive interfaces",
+      title: "HTML",
       imgUrl: "/svg/HTML.svg",
     },
     {
+      title: "CSS",
+      imgUrl: "/svg/css.svg",
+    },
+    {
       title: "React",
-      description: "For building dynamic and interactive user interfaces",
       imgUrl: "/svg/React.svg",
     },
     {
       title: "JavaScript",
-      description: "For speaking with devices",
       imgUrl: "/svg/JavaScript.svg",
     },
     {
       title: "TypeScript",
-      description: "To catch errors on development stage",
       imgUrl: "/svg/TypeScript.svg",
     },
     {
       title: "Next.js",
-      description: "To make websites optimized for search engines",
       imgUrl: "/svg/NextJS.svg",
     },
     {
       title: "Node.js",
-      description: "For processing, managing and sharing data",
       imgUrl: "/svg/NodeJs.svg",
     },
     {
       title: "Figma",
-      description: "For speaking with designers",
       imgUrl: "/svg/Figma.svg",
     },
     {
       title: "MongoDB",
-      description: "For storing and managing data",
       imgUrl: "/svg/MongoDB.svg",
     },
     {
       title: "Wordpress",
-      description: "For fast building and deploying sites",
       imgUrl: "/svg/WordPress.svg",
     },
     {
       title: "Git",
-      description: "For version control and collaboration",
       imgUrl: "/svg/GitHub.svg",
+    },
+    {
+      title: "Tailwind",
+      imgUrl: "/svg/tailwind.svg",
+    },
+    {
+      title: "SCSS",
+      imgUrl: "/svg/sass.svg",
+    },
+    {
+      title: "Redux toolkit",
+      imgUrl: "/svg/redux.svg",
+    },
+    {
+      title: "Firebase",
+      imgUrl: "/svg/firebase.svg",
+    },
+    {
+      title: "Swagger",
+      imgUrl: "/svg/swagger.svg",
     },
   ]
 
@@ -70,12 +84,11 @@ export default function Skills() {
             </SubheadingText>
           </div>
           <div className="mt-12 flex min-w-full">
-            <ul className="grid grid-cols-1 gap-[15px] md:grid-cols-2 md:gap-[30px] w-full">
+            <ul className="grid grid-cols-1 gap-[15px] md:grid-cols-6 md:gap-[25px] w-full">
               {skills.map((skill) => (
                 <li key={skill.title} className="flex w-full">
                   <Skill
                     title={skill.title}
-                    description={skill.description}
                     imgUrl={skill.imgUrl}
                     widthModifier={skill.title === "Figma" ? 2 / 3 : 1}
                   />

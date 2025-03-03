@@ -11,10 +11,9 @@ type SkillProps = Skill & {
 
 export default function Skill({
   title,
-  description,
   imgUrl,
-  baseWidth = 65,
-  baseHeight = 65,
+  baseWidth = 90,
+  baseHeight = 90,
   widthModifier = 1,
 }: SkillProps) {
   const width = baseWidth * widthModifier
@@ -22,14 +21,13 @@ export default function Skill({
 
   return (
     <div
-      className={`${styles.gradient} rounded-[40px] flex w-full p-6 items-center justify-start`}
+      className={`${styles.gradient} aspect-square flex-col rounded-[40px] flex w-full p-6 items-center justify-center align-center`}
     >
       <div>
         <Image src={imgUrl} alt={title} width={width} height={height} />
       </div>
-      <div className="ml-4">
+      <div className="mt-3 text-center">
         <ItemHeading>{title}</ItemHeading>
-        <p className="mt-1">{description}</p>
       </div>
     </div>
   )
