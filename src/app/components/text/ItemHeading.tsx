@@ -5,5 +5,5 @@ export default function ItemHeading({
 }: {
   children: React.ReactNode
 }) {
-  return <h3 className="text-3xl font-bold">{children}</h3>
+  return <h3 className="text-xl md:text-2xl font-bold">{children}</h3>
 }

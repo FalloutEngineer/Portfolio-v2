@@ -2,6 +2,7 @@ import CursorEffect from "../components/cursor-effect/CursorEffect"
 import FlyingButtons from "../components/flying-buttons/FlyingButtons"
 import Header from "../components/header/Header"
 import CustomMarquee from "../components/marquee/CustomMarquee"
+import Footer from "./sections/footer/Footer"
 
 import Hero from "./sections/hero/Hero"
 import Path from "./sections/path/Path"
@@ -32,11 +33,12 @@ export default function Home() {
         <FlyingButtons />
         <CVMarquee />
         <CursorEffect />
+        <Path />
+        <CVMarquee />
         <Projects />
         <CVMarquee />
         <Skills />
-        <CVMarquee />
-        <Path />
+        <Footer />
       </main>
       <footer className=""></footer>
     </div>

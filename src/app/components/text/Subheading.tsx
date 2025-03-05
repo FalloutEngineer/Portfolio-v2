@@ -6,6 +6,6 @@ export default function SubHeading({
   children: React.ReactNode
 }) {
   return (
-    <h3 className="font-black text-1xl md:text-1xl lg:text-2xl">{children}</h3>
+    <h3 className="font-bold text-1xl md:text-1xl lg:text-2xl">{children}</h3>
   )
 }

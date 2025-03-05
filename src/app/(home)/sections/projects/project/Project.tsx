@@ -10,11 +10,17 @@ import "slick-carousel/slick/slick-theme.css"
 
 import styles from "../../../../components/gradient.module.css"
 import ConditionalLinkWrapper from "@/app/components/conditional-wrap/ConditionalLinkWrapper"
+import SkillTag from "@/app/components/skill-tag/SkillTag"
+
+import Text from "@/app/components/text/Text"
+import LinkIcon from "@/app/components/link-icon/LinkIcon"
 
 export default function Project({ project }: { project: Project }) {
   const imageSizeModifier = 1
 
   const isSliderMode = project.images && project.images.length > 1
+
+  const isLink = project.link ? true : false
 
   const sliderSettings = {
     dots: false,
@@ -26,26 +32,38 @@ export default function Project({ project }: { project: Project }) {
 
   return (
     <ConditionalLinkWrapper
-      condition={project.link ? true : false}
+      condition={isLink}
       href={project.link ? project.link : ""}
     >
       <div
-        className={`${styles.gradient} flex gap-10 flex-col md:flex-row w-full justify-between rounded-[40px] px-6 py-4 md:px-16 md:py-8`}
+        className={`${styles.gradient} flex gap-10 flex-col lg:flex-row w-full justify-between rounded-[40px] px-6 md:px-16 py-8 link-icon-trigger`}
       >
         <div className="flex flex-col gap-4">
           <div className="">
-            <ItemHeading>{project.title}</ItemHeading>
-            <p className="mt-3 whitespace-pre-wrap opacity-65">
-              {project.description}
+            <ItemHeading>
+              <span className="flex gap-2">
+                {project.title} {isLink && <LinkIcon />}
+              </span>
+            </ItemHeading>
+            <p className="mt-3 whitespace-pre-wrap">
+              <Text>{project.description}</Text>
             </p>
           </div>
           <div className="">
             <ItemSubheading>Role</ItemSubheading>
-            <p className="opacity-65">{project.role}</p>
+            <p>
+              <Text>{project.role}</Text>
+            </p>
           </div>
           <div className="">
             <ItemSubheading>Stack</ItemSubheading>
-            <p className="opacity-65">{project.stack}</p>
+            <ul className="flex gap-3 mt-3 flex-wrap">
+              {project.stack.map((item) => (
+                <li key={item}>
+                  <SkillTag text={item} />
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         <div
@@ -56,17 +74,17 @@ export default function Project({ project }: { project: Project }) {
               e.preventDefault()
             }
           }}
-          className={`flex self-center md:self-auto items-center justify-center mt-4 md:mt-0 ${
+          className={`flex self-center lg:self-auto items-center justify-center mt-4 md:mt-0 ${
             project.orientation === "vertical"
-              ? "max-w-72 lg:max-w-52"
-              : "max-w-[450px]"
+              ? "max-w-60 md:max-w-72 lg:max-w-52"
+              : "w-full max-w-80 md:max-w-[450px]"
           } ${isSliderMode ? "cursor-grab" : "cursor-default"}`}
         >
           <div
             className={`slider-container ${
               project.orientation === "vertical"
                 ? "max-w-72 lg:max-w-52"
-                : "max-w-2xl lg:max-w-3xl"
+                : "w-full max-w-2xl lg:max-w-3xl"
             } border-8 rounded-3xl border-zinc-800 bg-zinc-800 w-full`}
           >
             {project.images ? (
@@ -83,7 +101,7 @@ export default function Project({ project }: { project: Project }) {
                             alt={image.alt}
                             width={image.width * imageSizeModifier}
                             height={image.height * imageSizeModifier}
-                            className={`transition-all select-none md:hover:scale-[1.05] flex`}
+                            className={`transition-all duration-300 select-none md:hover:scale-[1.05] flex`}
                           />
                         </div>
                       ))
@@ -98,7 +116,7 @@ export default function Project({ project }: { project: Project }) {
                       alt={project.images?.[0].alt}
                       width={project.images?.[0].width * imageSizeModifier}
                       height={project.images?.[0].height * imageSizeModifier}
-                      className="transition-all select-none md:hover:scale-[1.05] flex"
+                      className="transition-all duration-300 select-none md:hover:scale-[1.05] flex"
                       draggable={false}
                     />
                   </div>

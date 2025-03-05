@@ -14,11 +14,15 @@ export default function HeroText() {
   const heading = useRef<HTMLHeadingElement>(null)
   const lastLine = useRef<HTMLParagraphElement>(null)
 
+  const firstString = "Hi, my name is Vlad & i am"
+  const secondString = "Frontend Developer"
+  const thirdString = "And i’m crazy about technologies and aesthetics"
+
   useGSAP(() => {
     if (firstLine.current) {
       gsap.to(firstLine.current, {
         duration: 1.5,
-        text: "👋Hi, my name is Vlad & i am",
+        text: "👋" + firstString,
       })
     }
 
@@ -34,7 +38,7 @@ export default function HeroText() {
       gsap.to(heading.current, {
         delay: 2.3,
         duration: 1.5,
-        text: "Frontend Developer&lt;/&gt;",
+        text: secondString + "&lt;/&gt;",
       })
     }
 
@@ -43,21 +47,30 @@ export default function HeroText() {
         delay: 3.5,
         duration: 2.5,
         ease: "bounce.in",
-        text: "And i’m crazy about technologies and aesthetics",
+        text: thirdString,
       })
     }
   }, [])
 
   return (
     <>
-      <p className={`${styles.regular} mb-4`} ref={firstLine}>
+      <p
+        className={`${styles.regular} mb-4`}
+        ref={firstLine}
+        aria-label={firstString}
+      >
         👋
       </p>
       <h1
+        aria-label={secondString}
         className={`${styles.heading} min-h-[40px] sm:min-h-[48px] md:min-h-[60px] lg:min-h-[64px] text-4xl sm:text-5xl md:text-6xl lg:text-mainHeading`}
         ref={heading}
       ></h1>
-      <p className={`${styles.regular} mt-9`} ref={lastLine}></p>
+      <p
+        className={`${styles.regular} mt-9`}
+        ref={lastLine}
+        aria-label={thirdString}
+      ></p>
     </>
   )
 }
