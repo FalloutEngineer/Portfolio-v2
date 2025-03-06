@@ -29,7 +29,7 @@ export default function Skills() {
     },
     {
       title: "Next.js",
-      imgUrl: "/svg/NextJS.svg",
+      imgUrl: "/svg/NextJsIcon.svg",
     },
     {
       title: "Node.js",
