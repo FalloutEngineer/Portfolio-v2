@@ -6,7 +6,7 @@ export default function ContentWrapper({
   children?: React.ReactNode
 }) {
   return (
-    <div className="flex flex-col w-full py-[50px] md:py-[75px] lg:py-[145px]">
+    <div className="flex flex-col w-full py-[30px] md:py-[55px] lg:py-[125px]">
       {children}
     </div>
   )

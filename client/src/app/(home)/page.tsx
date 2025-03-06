@@ -12,21 +12,25 @@ import Skills from "./sections/skills/Skills"
 export default function Home() {
   const CVMarquee = () => (
     <CustomMarquee
-      items={[{ text: "DOWNLOAD CV", url: "#", isDownload: true }]}
+      items={[
+        {
+          text: "DOWNLOAD CV",
+          url: "/cv/Fullstack_Vladyslav Voichenko_CV.pdf",
+          isDownload: true,
+        },
+      ]}
     />
   )
 
   return (
     <div className="font-[family-name:var(--font-inter)] relative">
       <Header
-        left={[{ text: "Test", url: "" }]}
         center={[
           { text: "Home", url: "#home" },
+          { text: "Path", url: "#path" },
           { text: "Projects", url: "#projects" },
           { text: "Skills", url: "#skills" },
-          { text: "Path", url: "#path" },
         ]}
-        right={[{ text: "Apps", url: "./apps" }]}
       />
       <main className="">
         <Hero />

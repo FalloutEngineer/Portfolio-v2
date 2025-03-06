@@ -96,7 +96,7 @@ of given text written on Italian language.`,
     <section>
       <Container>
         <ContentWrapper>
-          <div className="">
+          <div className="pt-10" id="projects">
             <Heading>Projects</Heading>
             <SubheadingText>
               Let’s explore some selected projects in which i have participated

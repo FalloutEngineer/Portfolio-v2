@@ -7,7 +7,7 @@ import HeroText from "./hero-text/HeroText"
 
 export default function Hero() {
   return (
-    <section className={`${styles.section} overflow-hidden z-[1]`}>
+    <section className={`${styles.section} overflow-hidden z-[1]`} id="home">
       <Container>
         <div className="flex flex-col justify-center items-start w-full h-screen max-h-screen lg:min-h-[300px]">
           <HeroText />

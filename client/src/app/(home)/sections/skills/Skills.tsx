@@ -77,7 +77,7 @@ export default function Skills() {
     <section>
       <Container styles="flex">
         <ContentWrapper>
-          <div className="">
+          <div className="pt-10" id="skills">
             <Heading>How i could be useful</Heading>
             <SubheadingText>
               I’m geek in anything that helps with creating awesome IT products

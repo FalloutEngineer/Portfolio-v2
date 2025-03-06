@@ -21,6 +21,7 @@ export default function CustomMarquee({ items = [] }: CustomMarqueeProps) {
           download={item.isDownload}
           key={item.text}
           className="flex translate-y-3 flex-nowrap text-nowrap px-6"
+          target="_blank"
         >
           {item.text}
         </Link>

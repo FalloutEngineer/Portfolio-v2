@@ -15,7 +15,7 @@ export default function HeroText() {
   const lastLine = useRef<HTMLParagraphElement>(null)
 
   const firstString = "Hi, my name is Vlad & i am"
-  const secondString = "Frontend Developer"
+  const secondString = "Fullstack Developer"
   const thirdString = "And i’m crazy about technologies and aesthetics"
 
   useGSAP(() => {

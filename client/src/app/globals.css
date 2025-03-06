@@ -14,6 +14,8 @@
   --highlighted-text: rgba(92, 211, 189, 0.8);
 
   --gradient-main: linear-gradient(280deg, #5cd3bd, #5af9e4, #45c1bc, #4bdcdc);
+
+  scroll-behavior: smooth;
 }
 
 body {
