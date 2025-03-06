@@ -10,7 +10,7 @@ export default function Path() {
   const education: PathItem[] = [
     {
       title: "Software Engineering · KSU",
-      link: "https://www.kspu.edu/default.aspx?lang=uk",
+      link: "https://www.linkedin.com/in/vladyslav-voichenko/overlay/1741261448828/single-media-viewer/?profileId=ACoAADXCoNYBDWgQxF0U-tLwJlkimzFeZ1xz_70",
       role: "Master's",
       date: "SEP 2023 — JAN 2025",
       ariaDate: "from September 2023 to January 2025",
@@ -19,7 +19,7 @@ export default function Path() {
     },
     {
       title: "Software Engineering · KSU",
-      link: "https://www.kspu.edu/default.aspx?lang=uk",
+      link: "https://www.linkedin.com/in/vladyslav-voichenko/overlay/1735744360254/single-media-viewer/?profileId=ACoAADXCoNYBDWgQxF0U-tLwJlkimzFeZ1xz_70",
       role: "Bachelor's",
       date: "SEP 2019 — JUN 2023",
       ariaDate: "from September 2019 to June 2023",
