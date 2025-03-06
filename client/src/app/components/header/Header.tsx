@@ -32,6 +32,7 @@ export default function Header({
       <Container styles="relative px-0 md:px-[15px]">
         <button
           onClick={burgerOnClick}
+          aria-label={isActive ? "Close Menu" : "Open Menu"}
           className={`${styles.burger} ${
             isActive ? styles.active : ""
           } absolute right-2 top-2 text-6xl md:hidden flex rounded-full h-[60px] w-[60px] text-center items-center justify-center bg-backgroundDarker border-b-2 border-zinc-800 z-10`}

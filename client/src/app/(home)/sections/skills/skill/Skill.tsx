@@ -26,7 +26,7 @@ export default function Skill({
       <div className="flex max-w-[12vw] md:max-w-[7vw]">
         <Image
           src={imgUrl}
-          alt={title}
+          alt={""}
           width={width}
           height={height}
           className="flex"
